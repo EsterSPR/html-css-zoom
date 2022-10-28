@@ -8,27 +8,118 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
+/*header*/
+
 header {
+    width: 100vw;
     display: flex;
     justify-content: right;
     padding: 5px;
     margin-bottom: 30px;
+    position: fixed;
 }
 
 .header-text {
-    background-color: grey;
+    background-color: rgba(128,128,128,0.5);
     padding: 5px 10px;
     border-radius: 5px;
-    margin: 3px;
+    margin-right: 3px;
 }
 
+/*main*/
+
 main {
-    width: 90%;
+    width: 95vw;
+    height: 100vh;
     display: flex;
+    padding: 65px 0 150px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .cam {
-    width: calc(100%/7)
+    width: calc(100%/7 - 4px);
+    height: calc(100%/5);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding-right: 2px;
+    margin: 2px;
+}
+
+.nametag {
+    position: absolute;
+    bottom: 0;
+    font-size: 10pt;
+    background-color: rgba(128,128,128,0.5);
+    padding: 5px;
+}
+
+/*cam backgrounds*/
+
+.cam1 {
+    background-image: url(https://picsum.photos/id/101/200/300);
+}
+
+.cam2 {
+    background-image: url(https://picsum.photos/id/1031/200/300);
+}
+
+.cam3 {
+    background-image: url(https://picsum.photos/id/1033/200/300);
+}
+
+.cam4 {
+    background-image: url(https://picsum.photos/id/1054/200/300);
+}
+
+.cam5 {
+    background-image: url(https://picsum.photos/id/1076/200/300);
+}
+
+.cam6 {
+    background-image: url(https://picsum.photos/id/1081/200/300);
+}
+
+.cam7 {
+    background-image: url(https://picsum.photos/id/1078/200/300);
+}
+
+.cam8 {
+    background-image: url(https://picsum.photos/id/134/200/300);
+}
+
+.cam9 {
+    background-image: url(https://picsum.photos/id/221/200/300);
+}
+
+.cam10 {
+    background-image: url(https://picsum.photos/id/826/200/300);
+}
+
+.cam11 {
+    background-image: url(https://picsum.photos/id/297/200/300);
+}
+
+.cam12 {
+    background-image: url(https://picsum.photos/id/315/200/300);
+}
+
+.cam13 {
+    background-image: url(https://picsum.photos/id/358/200/300);
+}
+
+.cam14 {
+    background-image: url(https://picsum.photos/id/444/200/300);
+}
+
+/*footer*/
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
